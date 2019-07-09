@@ -33,5 +33,5 @@ void loop() {
   delay(delayMS);               // Počká po dobu DELAY_MS.
   digitalWrite(ledPin3, LOW);   // Zhasne LED diodu (LOW je logická nula).
   delay(delayMS);               // Počká po dobu DELAY_MS.
-              
+          
 }
