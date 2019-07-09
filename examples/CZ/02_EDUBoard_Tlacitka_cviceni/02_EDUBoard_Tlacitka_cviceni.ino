@@ -36,5 +36,4 @@ void loop() {
   digitalWrite(ledPin2, digitalRead(buttPin2));
   digitalWrite(ledPin3, digitalRead(buttPin3));
   
- 
 }
