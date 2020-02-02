@@ -4,34 +4,34 @@
   ----------------------------------------------
   Upraveno 2.11.2018
   Upravil Jiří Povolný (www.geplabs.com)
- */
+*/
 
-const int delayMS = 500;  // Čas prodlevy v ms.
-const int ledPin1 = 4;     // Číslo pinu (vývodu), na kterém je LED dioda připojena.
-const int ledPin2 = 5;     // Číslo pinu (vývodu), na kterém je LED dioda připojena.
-const int ledPin3 = 6;     // Číslo pinu (vývodu), na kterém je LED dioda připojena.
+//Konstanty (constants)
+const int DELAY_MS = 500;      //Čas prodlevy v ms.
+const int LPIN_1 = 4;          //Číslo pinu (vývodu), na kterém je LED dioda připojena.
+const int LPIN_2 = 5;          //Číslo pinu (vývodu), na kterém je LED dioda připojena.
+const int LPIN_3 = 6;          //Číslo pinu (vývodu), na kterém je LED dioda připojena.
 
-// Funkce setup proběhne jednou po připojení desky
+//Funkce setup proběhne jednou po připojení desky
 void setup() {
-  // Nastavení digitalního pinu 9 jako výstuo.
-  pinMode(ledPin1, OUTPUT);
-  pinMode(ledPin2, OUTPUT);
-  pinMode(ledPin3, OUTPUT);
+  pinMode(LPIN_1, OUTPUT);     //Nastavení digitalního pinu jako výstup.
+  pinMode(LPIN_2, OUTPUT);     //Nastavení digitalního pinu jako výstup.
+  pinMode(LPIN_3, OUTPUT);     //Nastavení digitalního pinu jako výstup.
 }
 
-// Funkce loop běží stále dokola, do skonání desky nebo světa.
+//Funkce loop běží stále dokola, do skonání desky nebo světa.
 void loop() {
-  digitalWrite(ledPin1, HIGH);  // Rozsvítí LED diodu (HIGH znamená logickou jedničku).
-  delay(delayMS);               // Počká po dobu DELAY_MS.
-  digitalWrite(ledPin1, LOW);   // Zhasne LED diodu (LOW je logická nula).
+  digitalWrite(LPIN_1, HIGH);  //Rozsvítí LED diodu (HIGH znamená logickou jedničku).
+  delay(DELAY_MS);             //Počká po dobu delayMS.
+  digitalWrite(LPIN_1, LOW);   //Zhasne LED diodu (LOW je logická nula).
   
-  digitalWrite(ledPin2, HIGH);  // Rozsvítí LED diodu (HIGH znamená logickou jedničku).
-  delay(delayMS);               // Počká po dobu DELAY_MS.
-  digitalWrite(ledPin2, LOW);   // Zhasne LED diodu (LOW je logická nula).
+  digitalWrite(LPIN_2, HIGH);  //Rozsvítí LED diodu (HIGH znamená logickou jedničku).
+  delay(DELAY_MS);             //Počká po dobu delayMS.
+  digitalWrite(LPIN_2, LOW);   //Zhasne LED diodu (LOW je logická nula).
   
-  digitalWrite(ledPin3, HIGH);  // Rozsvítí LED diodu (HIGH znamená logickou jedničku).
-  delay(delayMS);               // Počká po dobu DELAY_MS.
-  digitalWrite(ledPin3, LOW);   // Zhasne LED diodu (LOW je logická nula).
-  delay(delayMS);               // Počká po dobu DELAY_MS.
+  digitalWrite(LPIN_3, HIGH);  //Rozsvítí LED diodu (HIGH znamená logickou jedničku).
+  delay(DELAY_MS);             //Počká po dobu delayMS.
+  digitalWrite(LPIN_3, LOW);   //Zhasne LED diodu (LOW je logická nula).
+  delay(DELAY_MS);             //Počká po dobu delayMS.
           
 }
