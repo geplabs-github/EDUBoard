@@ -18,12 +18,12 @@ void setup(void) {
 }
 
 void loop(void) {
-  // picture loop
+  // Tzv. picture loop
   mujDisplej.firstPage();  
   do {
     // Nastavení fontu
     mujDisplej.setFont(u8g_font_unifont);
-    // Vypsání texu na pozici 0,40
+    // Vypsání textu na pozici 0,40
     mujDisplej.drawStr(0, 40, "Muj prvni text!");
   } while(mujDisplej.nextPage());
   

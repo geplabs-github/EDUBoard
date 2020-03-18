@@ -85,7 +85,7 @@ void nastavCas() {
   // Provede se jednoduchá kontrola na délku
   if(dt.length() == 17) {
 
-    // Následují kód "rozebere řetězec znaků a přiřadí je do jednotlivých proměnných.
+    // Následují kód "rozebere" řetězec znaků a přiřadí je do jednotlivých proměnných.
     rok = dt.substring(0,4).toInt();
     mes = dt.substring(4,6).toInt();
     den = dt.substring(6,8).toInt();
