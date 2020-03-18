@@ -48,7 +48,8 @@ void loop() {
 
   // V této smyčce se čeká, dokud se na sériovém portu 
   // něco nebjeví, tedy dokud na klávesnici něco nenapíšeme
-  // a neodešleme
+  // a neodešleme. 
+  // Také se zde opakované čtou údaje z RTC a zobrazují na displej.
   while(!Serial.available()){
     RTC.readTime();
     rok = RTC.getYears();
